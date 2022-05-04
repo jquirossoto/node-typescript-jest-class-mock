@@ -1,0 +1,37 @@
+{
+    "name": "typescript-jest-class-mock",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "prebuild": "npm run build:clean",
+        "build": "tsc",
+        "build:clean": "rm -rf dist",
+        "start": "node --loader ts-node/esm src/app.ts",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jquirossoto/node-typescript-jest-class-mock.git"
+    },
+    "keywords": [],
+    "author": "jquirossoto",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jquirossoto/node-typescript-jest-class-mock/issues"
+    },
+    "homepage": "https://github.com/jquirossoto/node-typescript-jest-class-mock#readme",
+    "devDependencies": {
+        "@types/jest": "^27.5.0",
+        "@types/node": "^17.0.31",
+        "jest": "^28.0.3",
+        "jest-ts-webcompat-resolver": "^1.0.0",
+        "ts-jest": "^28.0.1",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "axios": "^0.27.2"
+    }
+}
